@@ -15,16 +15,15 @@ import id.chirikualii.cataloguemovie.model.SearchMovie;
 
 public class DetailMovieActivity extends AppCompatActivity {
     @BindView(R.id.img_poster)
-    private ImageView imgPoster;
+    ImageView imgPoster;
     @BindView(R.id.txt_title_movie)
-    private TextView txtTitleMovie;
+    TextView txtTitleMovie;
     @BindView(R.id.txt_rating)
-    private TextView txtRating;
+    TextView txtRating;
     @BindView(R.id.txt_release_date)
-    private TextView txtReleaseDate;
+     TextView txtReleaseDate;
     @BindView(R.id.txt_overview)
-    private TextView txtOverview;
-
+    TextView txtOverview;
     private SearchMovie movie;
     private String overview;
     private String rating;
