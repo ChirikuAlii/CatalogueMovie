@@ -16,11 +16,11 @@ import id.chirikualii.cataloguemovie.model.SearchMovie;
 
 public class SearchViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     @BindView(R.id.txt_title_movie)
-    private TextView txtTitleMovie;
+    TextView txtTitleMovie;
     @BindView(R.id.txt_release_date)
-    private TextView txtReleaseDate;
+    TextView txtReleaseDate;
     @BindView(R.id.img_poster)
-    private ImageView imgPoster;
+    ImageView imgPoster;
     private Intent intent;
     public SearchViewHolder(View itemView) {
         super(itemView);
