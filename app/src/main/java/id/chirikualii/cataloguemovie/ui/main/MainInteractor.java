@@ -14,8 +14,8 @@ import retrofit2.Response;
 
 public class MainInteractor implements IMainInteractor {
 
-    IMainInteractor.listener listener;
-    private ApiService service;
+    private IMainInteractor.listener listener;
+    private ApiService service = ApiClient.getApiClient().create(ApiService.class);
     private List<SearchMovie> movieList = new ArrayList<>();
 
     public MainInteractor(IMainInteractor.listener listener) {
@@ -24,7 +24,6 @@ public class MainInteractor implements IMainInteractor {
 
     @Override
     public void search(String query) {
-        service = ApiClient.getApiClient().create(ApiService.class);
 
         service.responseSearchMovieCall(BuildConfig.MOVIE_API_KEY ,query,"1").enqueue(new Callback<ResponseSearchMovie>() {
             @Override

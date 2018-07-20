@@ -12,7 +12,7 @@ import id.chirikualii.cataloguemovie.R;
 import id.chirikualii.cataloguemovie.model.SearchMovie;
 
 public class SearchAdapter extends RecyclerView.Adapter<SearchViewHolder> {
-     List<SearchMovie> movieList;
+    private List<SearchMovie> movieList;
 
     public SearchAdapter(List<SearchMovie> movieList) {
         this.movieList = movieList;

@@ -15,20 +15,20 @@ import id.chirikualii.cataloguemovie.model.SearchMovie;
 
 public class DetailMovieActivity extends AppCompatActivity {
     @BindView(R.id.img_poster)
-    ImageView imgPoster;
+    private ImageView imgPoster;
     @BindView(R.id.txt_title_movie)
-    TextView txtTitleMovie;
+    private TextView txtTitleMovie;
     @BindView(R.id.txt_rating)
-    TextView txtRating;
+    private TextView txtRating;
     @BindView(R.id.txt_release_date)
-    TextView txtReleaseDate;
+    private TextView txtReleaseDate;
     @BindView(R.id.txt_overview)
-    TextView txtOverview;
+    private TextView txtOverview;
 
-    SearchMovie movie;
-    String overview;
-    String rating;
-    String releaseDate;
+    private SearchMovie movie;
+    private String overview;
+    private String rating;
+    private String releaseDate;
     public static final String DATA_DETAIL = "detail_movie";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

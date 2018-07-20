@@ -16,10 +16,12 @@ import id.chirikualii.cataloguemovie.model.SearchMovie;
 
 public class SearchViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     @BindView(R.id.txt_title_movie)
-    TextView txtTitleMovie;
-    @BindView(R.id.txt_release_date) TextView txtReleaseDate;
-    @BindView(R.id.img_poster) ImageView imgPoster;
-    Intent intent;
+    private TextView txtTitleMovie;
+    @BindView(R.id.txt_release_date)
+    private TextView txtReleaseDate;
+    @BindView(R.id.img_poster)
+    private ImageView imgPoster;
+    private Intent intent;
     public SearchViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this,itemView);
