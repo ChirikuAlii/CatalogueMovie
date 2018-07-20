@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CatalogueMovie</string>
+    <string name="overview_detail_movie">Overview: %1$s</string>
+    <string name="release_date_movie">Release Date: %1$s</string>
+    <string name="average_rating_movie">Average Rating: %1$s</string>
+</resources>
